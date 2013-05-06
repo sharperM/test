@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+    <head><link rel="canonical" href="http://msdn.microsoft.com/en-us/library/vstudio/bb984658.aspx" />
+        <title>CMFCEditBrowseCtrl::EnableFileBrowseButton</title>
+
+
+
+
+<meta name="DCS.dcsuri" content="/en-us/library/vstudio/bb984658(d=default,l=en-us,v=vs.110).aspx" />
+
+<meta name="NormalizedUrl" content="http://msdn.microsoft.com/en-us/library/vstudio/bb984658(d=default,l=en-us,v=vs.110).aspx" />
+
+<meta name="DCSext.ProductFamily" content="LIB_DG" />
+
+<meta name="DCSext.Product" content="VS_VC" />
+
+<meta name="DCSext.Title" content="CMFCEditBrowseCtrl::EnableFileBrowseButton" />
+
+<meta name="VotingContextUrl" content="http://msdn.microsoft.com/en-us/library/vstudio/bb984658(d=default,l=en-us,v=vs.110).aspx" />
+
+<meta name="MN" content="4B9B1F2A-1:51:31 AM" />
+
+<meta name="Search.ShortId" content="bb984658" />
+
+<meta name="Ms.Locale" content="en-us" />
+
+
+
+
+
+
+
+
+        
+    
+    
+
+    <link rel="stylesheet" type="text/css" href="http://i3.msdn.microsoft.com/Combined.css?resources=0:Topic,0:CodeSnippet,0:ProgrammingSelector,0:ExpandableCollapsibleArea,0:CommunityContent,0:TopicNotInScope,0:FeedViewerBasic,0:ImageSprite,1:Vstudio,1:epxheader.4,1:sprite,2:Toc,2:NavigationResize,3:FeedbackCounter,0:VersionSelector,3:Feedback,1:epxfooter.4;/Areas/Epx/Content/Css:0,/Areas/Epx/Themes/VStudio/Content:1,/Areas/Epx/Library/Content:2,/Areas/Epx/Shared/Content:3&amp;amp;hashKey=7A5F1732285F8C9CE9759CE07B98F3BE" /></head>
+    <body class="library">
+        <div id="page">
+            
+            
+  
+            
+    
+
+
+
+<header class="ux-header">
+  <div class="header-top-bar">
+    <a class="header-top-bar-brand-logo" href="http://msdn.microsoft.com/vstudio" title="Visual Studio Home"></a>
+
+    <ul class="header-top-bar-links" id="ux-nav-user">
+      <li class="header-top-bar-search-box">
+        
+
+<form name="HeaderSearchForm" id="HeaderSearchForm" method="get" action="http://social.msdn.microsoft.com/search/en-us/">
+  <input type="text" id="HeaderSearchTextBox" name="query" title="Search Visual Studio" class="TextBoxSearch" />
+  <input type="hidden" id="RefinementId" name="refinement" title="195" value="195" />
+  <input type="submit" id="HeaderSearchButton" title="Search Visual Studio" class="header-search-button" value="" />
+  
+</form>
+      </li>
+
+
+
+      <li class="last">
+        <a class="scarabLink" id="idPPScarab" href="https://login.live.com/login.srf?wa=wsignin1.0&amp;rpsnv=11&amp;ct=1366879891&amp;rver=6.0.5276.0&amp;wp=MCLBI&amp;wlcxt=msdn%24msdn%24msdn&amp;wreply=http%3a%2f%2fmsdn.microsoft.com%2fen-us%2flibrary%2fvstudio%2fbb984658.aspx&amp;lc=1033&amp;id=254354&amp;mkt=en-US" title="Sign in">
+          <span id="idPPScarabSIT">Sign in</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="header-nav-container">
+  <nav class="header-nav">
+    <ul class="header-nav-pri">
+          <li><a href="http://msdn.microsoft.com/en-us/vstudio/aa718325.aspx" title="Home">Home</a></li>
+          <li><a href="http://code.msdn.microsoft.com/vstudio" title="Samples">Samples</a></li>
+          <li><a href="http://msdn.microsoft.com/en-us/vstudio/jj672990.aspx" title="Languages">Languages</a></li>
+          <li><a href="http://visualstudiogallery.msdn.microsoft.com/" title="Extensions">Extensions</a></li>
+          <li class="header-nav-selected"><a href="http://msdn.microsoft.com/en-us/library/vstudio" title="Documentation">Documentation</a></li>
+          <li><a href="http://msdn.microsoft.com/en-us/vstudio/dd314520.aspx" title="Community">Community</a></li>
+
+    </ul>
+  
+      <ul class="header-nav-sec">
+            <li class="header-nav-selected">
+                <a href="http://msdn.microsoft.com/en-us/library/vstudio/dd831853.aspx" title="Visual Studio">Visual Studio</a>
+            </li>
+            <li>
+                <a href="http://msdn.microsoft.com/en-us/library/vstudio/fda2bad5.aspx" title="Team Foundation Server/ALM">Team Foundation Server/ALM</a>
+            </li>
+            <li>
+                <a href="http://msdn.microsoft.com/en-us/library/vstudio/w0x726c2.aspx" title=".NET Framework">.NET Framework</a>
+            </li>
+      </ul>
+  </nav>
+  
+    <div class="header-nav-trial">
+      <a href="http://go.microsoft.com/fwlink/p/?LinkId=240162" title="Get started for free" class="trialanchor">
+        <span class="trialtext">Get started for free</span>
+        <span class="trialimage"></span>
+      </a>
+    </div>
+  </div>
+</header>
+
+
+
+
+        
+            <div id="body">
+                
+
+
+
+
+
+
+
+
+<div id="leftNav">
+
+
+
+<div id="tocnav">
+            <div class="toclevel0" data-toclevel="0">
+<a data-tochassubtree="true" href="/en-us/library/vstudio/jj159353.aspx" id="jj159081_MSDN.10_en-us" title="Developer Tools and Languages">Developer Tools and Languages</a>            </div>
+            <div class="toclevel0" data-toclevel="0">
+<a data-tochassubtree="true" href="/en-us/library/vstudio/dd831853.aspx" id="aa187917_MSDN.10_en-us" title="Visual Studio 2012">Visual Studio 2012</a>            </div>
+            <div class="toclevel0" data-toclevel="0">
+<a data-tochassubtree="true" href="/en-us/library/vstudio/60k1461a.aspx" id="hh584840_VS.110_en-us" title="Visual C++">Visual C++</a>            </div>
+            <div class="toclevel0" data-toclevel="0">
+<a data-tochassubtree="true" href="/en-us/library/vstudio/hh967573.aspx" id="hh967576_VS.110_en-us" title="MFC and ATL">MFC and ATL</a>            </div>
+            <div class="toclevel0" data-toclevel="0">
+<a data-tochassubtree="true" href="/en-us/library/vstudio/d06h2x6e.aspx" id="hh790166_VS.110_en-us" title="MFC Desktop Applications">MFC Desktop Applications</a>            </div>
+            <div class="toclevel0" data-toclevel="0">
+<a data-tochassubtree="true" href="/en-us/library/vstudio/bk77x1wx.aspx" id="hh793446_VS.110_en-us" title="Classes">Classes</a>            </div>
+            <div class="toclevel1" data-toclevel="1">
+<a data-tochassubtree="true" href="/en-us/library/vstudio/bb983421.aspx" id="hh585294_VS.110_en-us" title="CMFCEditBrowseCtrl Class">CMFCEditBrowseCtrl Class</a>            </div>
+            <div class="toclevel2" data-toclevel="2">
+<a href="/en-us/library/vstudio/bb984186.aspx" title="CMFCEditBrowseCtrl::EnableBrowseButton">CMFCEditBrowseCtrl::EnableBrowseButton</a>            </div>
+            <div class="toclevel2 current" data-toclevel="2">
+<a href="/en-us/library/vstudio/bb984658.aspx" title="CMFCEditBrowseCtrl::EnableFileBrowseButton">CMFCEditBrowseCtrl::EnableFileBrowseButton</a>            </div>
+            <div class="toclevel2" data-toclevel="2">
+<a href="/en-us/library/vstudio/bb983293.aspx" title="CMFCEditBrowseCtrl::EnableFolderBrowseButton">CMFCEditBrowseCtrl::EnableFolderBrowseButton</a>            </div>
+            <div class="toclevel2" data-toclevel="2">
+<a href="/en-us/library/vstudio/bb983389.aspx" title="CMFCEditBrowseCtrl::GetMode">CMFCEditBrowseCtrl::GetMode</a>            </div>
+            <div class="toclevel2" data-toclevel="2">
+<a href="/en-us/library/vstudio/bb983602.aspx" title="CMFCEditBrowseCtrl::OnAfterUpdate">CMFCEditBrowseCtrl::OnAfterUpdate</a>            </div>
+            <div class="toclevel2" data-toclevel="2">
+<a href="/en-us/library/vstudio/bb983762.aspx" title="CMFCEditBrowseCtrl::OnBrowse">CMFCEditBrowseCtrl::OnBrowse</a>            </div>
+            <div class="toclevel2" data-toclevel="2">
+<a href="/en-us/library/vstudio/cc714749.aspx" title="CMFCEditBrowseCtrl::OnChangeLayout">CMFCEditBrowseCtrl::OnChangeLayout</a>            </div>
+            <div class="toclevel2" data-toclevel="2">
+<a href="/en-us/library/vstudio/bb984164.aspx" title="CMFCEditBrowseCtrl::OnDrawBrowseButton">CMFCEditBrowseCtrl::OnDrawBrowseButton</a>            </div>
+            <div class="toclevel2" data-toclevel="2">
+<a href="/en-us/library/vstudio/bb983721.aspx" title="CMFCEditBrowseCtrl::SetBrowseButtonImage">CMFCEditBrowseCtrl::SetBrowseButtonImage</a>            </div>
+            <div class="toclevel2" data-toclevel="2">
+<a href="/en-us/library/vstudio/ee230979.aspx" title="CMFCEditBrowseCtrl::OnIllegalFileName">CMFCEditBrowseCtrl::OnIllegalFileName</a>            </div>
+</div>    
+    
+    
+    
+    
+    
+    
+    
+
+<a id="NavigationResize" href="javascript:void(0)">
+    <img class="cl_nav_resize_open" src="http://i3.msdn.microsoft.com/Areas/Epx/Content/Images/ImageSprite.png" title="Expand" alt="Expand" />
+    <img class="cl_nav_resize_close" src="http://i3.msdn.microsoft.com/Areas/Epx/Content/Images/ImageSprite.png" title="Minimize" alt="Minimize" />
+</a>
+
+
+
+</div>
+<div id="content" class="content">
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+    <div id="ratingCounterSeperator" class="cl_lw_vs_seperator" style="display: none;"></div>
+
+    <div id="ratingCounter">
+        <span id="rcA" class="ratingText">
+            This topic has not yet been rated <span id="rateThisPrefix">- </span><a id="rateThisTopic" href="#feedback" title="Rate this topic">Rate this topic</a>
+            
+        </span>
+    </div>
+
+        
+<div xmlns="http://www.w3.org/1999/xhtml">
+  
+  <div class="topic" xmlns="http://www.w3.org/1999/xhtml" xmlns:mtps="http://msdn2.microsoft.com/mtps" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:cs="http://msdn.microsoft.com/en-us/">
+    <h1 class="title">CMFCEditBrowseCtrl::EnableFileBrowseButton</h1>
+    
+    <div class="lw_vs">
+      <div id="curversion">
+        <strong>
+            Visual Studio 2012
+        </strong>
+      </div>
+      <div id="versionclick">
+        <div id="vsseperator" class="cl_lw_vs_seperator"></div>
+        <div>
+          <div>
+            <a id="vsLink" href="javascript:;">
+                        Other Versions
+                    </a>
+          </div>
+          <div class="cl_vs_arrow clip10x10">
+            <img class="cl_lw_vs_arrow" id="vsArrow" alt="" src="http://i3.msdn.microsoft.com/Areas/Epx/Content/Images/ImageSprite.png" />
+          </div>
+        </div>
+        <ul id="vsPanel">
+          <li>
+            <a href="/en-us/library/vstudio/bb984658(v=vs.100).aspx" title="">Visual Studio 2010</a>
+          </li>
+          <li>
+            <a href="/en-us/library/vstudio/bb984658(v=vs.90).aspx" title="">Visual Studio 2008</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div style="clear:both;"></div>
+    
+    <div id="mainSection">
+      <div id="mainBody">
+        <p>
+          
+        </p>
+        <div class="introduction">
+          <p>Displays the browse button on the current edit browse control and puts the control in <span class="parameter">file browse</span> mode.</p>
+        </div>
+        <div id="syntaxSection" class="section">
+<div id="code-snippet-1" class="codeSnippetContainer" xmlns="">
+    <div class="codeSnippetContainerTabs">
+        
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+        <div class="codeSnippetToolBar">
+            <div class="codeSnippetToolBarText">
+                <a name="CodeSnippetCopyLink" style="display: none;" title="Copy to clipboard." href="javascript:if (window.epx.codeSnippet)window.epx.codeSnippet.copyCode('CodeSnippetContainerCode_79fb92dc-6e2e-4793-a87d-93c0673740b0');">Copy</a>
+            </div>
+        </div>
+        <div id="CodeSnippetContainerCode_79fb92dc-6e2e-4793-a87d-93c0673740b0" class="codeSnippetContainerCode" dir="ltr">
+            <div style="color:Black;"><pre>
+void EnableFileBrowseButton(
+   LPCTSTR lpszDefExt=NULL,
+   LPCTSTR lpszFilter=NULL
+);
+</pre></div>
+            
+        </div>
+    </div>
+</div>
+</div>
+        <div>
+          
+          <div class="LW_CollapsibleArea_TitleDiv">
+            <div>
+              <a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse">
+                <span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span>
+                <span class="LW_CollapsibleArea_Title">Parameters</span>
+              </a>
+              <div class="LW_CollapsibleArea_HrDiv">
+                <hr class="LW_CollapsibleArea_Hr" />
+              </div>
+            </div>
+          </div>
+          <div class="sectionblock">
+            <a id="parametersToggle">
+              
+            </a>
+            <dl class="authored">
+              <dt>
+                <span>
+                  <span class="parameter">lpszDefExt</span>
+                </span>
+              </dt>
+              <dd>
+                <p>Specifies the default file name extension that is used in the file selection dialog box. The default value is <span><span class="input">NULL</span></span>.</p>
+              </dd>
+              <dt>
+                <span>
+                  <span class="parameter">lpszFilter</span>
+                </span>
+              </dt>
+              <dd>
+                <p>Specifies the default filter string that is used in the file selection dialog box. The default value is <span><span class="input">NULL</span></span>.</p>
+              </dd>
+            </dl>
+          </div>
+        </div>
+        <div>
+          <div class="LW_CollapsibleArea_TitleDiv">
+            <div>
+              <a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse">
+                <span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span>
+                <span class="LW_CollapsibleArea_Title">Remarks</span>
+              </a>
+              <div class="LW_CollapsibleArea_HrDiv">
+                <hr class="LW_CollapsibleArea_Hr" />
+              </div>
+            </div>
+          </div>
+          <div class="sectionblock">
+            <a id="languageReferenceRemarksToggle">
+              
+            </a>
+            <p>When the edit browse control is in file browse mode and the user clicks the browse button, the control displays the standard file selection dialog box.</p>
+          </div>
+        </div>
+        <div>
+          <div class="LW_CollapsibleArea_TitleDiv">
+            <div>
+              <a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse">
+                <span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span>
+                <span class="LW_CollapsibleArea_Title">Requirements</span>
+              </a>
+              <div class="LW_CollapsibleArea_HrDiv">
+                <hr class="LW_CollapsibleArea_Hr" />
+              </div>
+            </div>
+          </div>
+          <div class="sectionblock">
+            <a id="requirementsTitleToggle">
+              
+            </a>
+            <p>
+              <span class="label">Header:</span> afxeditbrowsectrl.h</p>
+          </div>
+        </div>
+        <div>
+          <div class="LW_CollapsibleArea_TitleDiv">
+            <div>
+              <a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse">
+                <span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span>
+                <span class="LW_CollapsibleArea_Title">See Also</span>
+              </a>
+              <div class="LW_CollapsibleArea_HrDiv">
+                <hr class="LW_CollapsibleArea_Hr" />
+              </div>
+            </div>
+          </div>
+          <div class="sectionblock">
+            <a id="seeAlsoToggle">
+              
+            </a>
+            <h4 class="subHeading">Reference</h4>
+            <div class="seeAlsoStyle">
+              <span>
+                <a href="http://msdn.microsoft.com/en-us/library/vstudio/bb983421.aspx">CMFCEditBrowseCtrl Class</a>
+              </span>
+            </div>
+            <div class="seeAlsoStyle">
+              <span>
+                <a href="http://msdn.microsoft.com/en-us/library/vstudio/ws8s10w4.aspx">Hierarchy Chart</a>
+              </span>
+            </div>
+            <div class="seeAlsoStyle">
+              <span>
+                <a href="http://msdn.microsoft.com/en-us/library/vstudio/bb984186.aspx">CMFCEditBrowseCtrl::EnableBrowseButton</a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<div id="contentFeedback">
+    <form method="post" action="/en-us/library/vstudio/feedback/add/bb984658.aspx">
+        <input name="__RequestVerificationToken" type="hidden" value="0VQa4gfVXAiKDgqrhicnB0jyJiCkk3VdnHe8K2o5hvdZMkljIJAgSSB6DE-HtTSi-z8vAekHgC_0mFCdrHDO5-kmicc3IrhdU8-UrqF8S5SN_HSgMCqXO74Ei7OysxghPVYwBw2" />
+    <div id="contentFeedbackContainer">
+        <div class="FeedbackTitleContainer">
+            <a name="feedback"></a>
+        Did you find this helpful?
+            <input id="rdIsUsefulYes" name="rdIsUseful" type="radio" value="1" onclick="toggleContentFeedback('Yes');" /><label for="rdIsUsefulYes">Yes</label>
+            <input id="rdIsUsefulNo" name="rdIsUseful" type="radio" value="0" onclick="toggleContentFeedback('No');" /><label for="rdIsUsefulNo">No</label>
+        
+        </div>
+        
+            <div id="contentFeedbackQAContainer">
+                
+                    <div id="feedbackListNoContainer" class="FeedbackListContainer">
+                        
+                            <div>
+                                <input id="chkbxNo201" name="chkbxNo" type="checkbox" value="201" />
+                                <label for="chkbxNo201">Not accurate</label>
+                            </div>
+                        
+                            <div>
+                                <input id="chkbxNo202" name="chkbxNo" type="checkbox" value="202" />
+                                <label for="chkbxNo202">Not enough depth</label>
+                            </div>
+                        
+                            <div>
+                                <input id="chkbxNo203" name="chkbxNo" type="checkbox" value="203" />
+                                <label for="chkbxNo203">Need more code examples</label>
+                            </div>
+                        
+                    </div>
+                
+                <div class="FeedbackTellUsMoreContainer">
+                    <textarea id="feedbackText" name="feedbackText" class="TellUsMoreTextBoxSearchLoaded" onfocus="WatermarkFocus(this, 'Tell us more...', 'TellUsMoreTextBoxSearch')" onblur="WatermarkBlur(this, 'Tell us more...', 'TellUsMoreTextBoxSearchLoaded')" onmouseover="TextBoxCharactersCounter(this, document.getElementById('feedbackTextCounter'), 1500)" onkeydown="TextBoxCharactersCounter(this, document.getElementById('feedbackTextCounter'), 1500)" onkeyup="TextBoxCharactersCounter(this, document.getElementById('feedbackTextCounter'), 1500)">Tell us more...</textarea>
+                </div>
+                <span class="counter">(<span id="feedbackTextCounter">1500</span> characters remaining)</span>
+                <input type="hidden" id="returnUrl" name="returnUrl" value="http://msdn.microsoft.com/en-us/library/vstudio/bb984658.aspx" />
+                <input type="submit" id="submit" value="Submit" title="Click to Submit Feedback" onclick="WatermarkOnSubmit(document.getElementById('feedbackText'), 'Tell us more...', 'TellUsMoreTextBoxSearch')" />
+                <div style="clear: both;"></div>
+            </div>  
+        
+    </div>
+    </form>
+</div>
+    
+
+
+
+</div>
+
+            </div>
+            <div class="clear"></div>
+        
+            
+    
+<footer class="ux-footer">
+  <div class="nav">
+    <div class="footerLinksContainer"> 
+          <ul class="footerLinks">
+            <li class="footerLinksTitle">
+              <a href="http://msdn.microsoft.com/en-us/vstudio/aa718325.aspx" title="Home">Home</a>
+            </li>
+
+                <li>
+                  <a href="http://msdn.microsoft.com/en-us/vstudio/aa718325.aspx" title="Welcome">Welcome</a>
+                </li>
+                <li>
+                  <a href="http://msdn.microsoft.com/en-us/vstudio/cc136611.aspx" title="Visual Studio">Visual Studio</a>
+                </li>
+                <li>
+                  <a href="http://msdn.microsoft.com/en-us/vstudio/ff637362.aspx" title="Team Foundation Server">Team Foundation Server</a>
+                </li>
+                <li>
+                  <a href="http://msdn.microsoft.com/en-us/vstudio/aa496123.aspx" title=".NET Framework">.NET Framework</a>
+                </li>
+          </ul>
+          <ul class="footerLinks">
+            <li class="footerLinksTitle">
+              <a href="http://code.msdn.microsoft.com/vstudio" title="Samples">Samples</a>
+            </li>
+
+          </ul>
+          <ul class="footerLinks">
+            <li class="footerLinksTitle">
+              <a href="http://msdn.microsoft.com/en-us/vstudio/jj672990.aspx" title="Languages">Languages</a>
+            </li>
+
+                <li>
+                  <a href="http://msdn.microsoft.com/en-us/vstudio/jj672990.aspx" title="Overview">Overview</a>
+                </li>
+                <li>
+                  <a href="http://msdn.microsoft.com/en-us/vstudio/hh386302.aspx" title="Visual C++">Visual C++</a>
+                </li>
+                <li>
+                  <a href="http://msdn.microsoft.com/en-us/vstudio/hh341490.aspx" title="Visual C#">Visual C#</a>
+                </li>
+                <li>
+                  <a href="http://msdn.microsoft.com/en-us/vstudio/hh388573.aspx" title="Visual Basic">Visual Basic</a>
+                </li>
+                <li>
+                  <a href="http://msdn.microsoft.com/en-us/vstudio/jj673959.aspx" title="JavaScript">JavaScript</a>
+                </li>
+                <li>
+                  <a href="http://msdn.microsoft.com/en-us/vstudio/hh388569.aspx" title="Visual F#">Visual F#</a>
+                </li>
+          </ul>
+          <ul class="footerLinks">
+            <li class="footerLinksTitle">
+              <a href="http://visualstudiogallery.msdn.microsoft.com/" title="Extensions">Extensions</a>
+            </li>
+
+          </ul>
+          <ul class="footerLinks">
+            <li class="footerLinksTitle">
+              <a href="http://msdn.microsoft.com/en-us/library/vstudio" title="Documentation">Documentation</a>
+            </li>
+
+                <li>
+                  <a href="http://msdn.microsoft.com/en-us/library/vstudio/dd831853.aspx" title="Visual Studio">Visual Studio</a>
+                </li>
+                <li>
+                  <a href="http://msdn.microsoft.com/en-us/library/vstudio/fda2bad5.aspx" title="Team Foundation Server/ALM">Team Foundation Server/ALM</a>
+                </li>
+                <li>
+                  <a href="http://msdn.microsoft.com/en-us/library/vstudio/w0x726c2.aspx" title=".NET Framework">.NET Framework</a>
+                </li>
+          </ul>
+          <ul class="footerLinks">
+            <li class="footerLinksTitle">
+              <a href="http://msdn.microsoft.com/en-us/vstudio/dd314520.aspx" title="Community">Community</a>
+            </li>
+
+                <li>
+                  <a href="http://social.msdn.microsoft.com/forums/en-us/category/visualstudio,vslanguages,vstfs,netdevelopment,vsarch" title="Forums">Forums</a>
+                </li>
+                <li>
+                  <a href="http://www.codeplex.com/site/search?query=visual%20studio&amp;amp;ac=1" title="CodePlex">CodePlex</a>
+                </li>
+                <li>
+                  <a href="http://visualstudio.uservoice.com/" title="User Voice">User Voice</a>
+                </li>
+                <li>
+                  <a href="http://connect.microsoft.com/visualstudio" title="File a Bug">File a Bug</a>
+                </li>
+          </ul>
+    </div>
+    </div>
+  <div class="footerSubLinksContainer">
+    <span class="localePickerLink"><a href="http://msdn.microsoft.com/en-us/vstudio/SelectLocale?fromPage=%2flibrary%2fvstudio%2fbb984658" title=" United States (English)"> United States (English)</a></span>
+    <ul class="footerSubLinks">
+      <li class="subFooterLink">© 2013 Microsoft</li>
+          <li class="subFooterLink">
+            <a href="http://msdn.microsoft.com/cc300389.aspx" title="Terms of Use">Terms of Use</a>
+          </li>
+          <li class="subFooterLink">
+            <a href="http://www.microsoft.com/library/toolbar/3.0/trademarks/en-us.mspx" title="Trademarks">Trademarks</a>
+          </li>
+          <li class="subFooterLink">
+            <a href="http://go.microsoft.com/fwlink/?linkid=248681" title="Privacy Statement">Privacy Statement</a>
+          </li>
+          <li class="subFooterLink">
+            <a href="https://lab.msdn.microsoft.com/mailform/contactus.aspx?refurl=http%3a%2f%2fmsdn.microsoft.com%2fen-us%2fvstudio%2faa718325.aspx&amp;amp;loc=en-us" title="Site Feedback">Site Feedback</a>
+          </li>
+      <li>
+        <a class="microsoftlogo" href="http://www.microsoft.com" title="Microsoft"></a>
+      </li>
+    </ul>
+  </div>
+</footer>
+
+            <div class="footerPrintView">
+                <div class="footerCopyrightPrintView">© 2013 Microsoft. All rights reserved.</div>
+            </div>
+
+            
+            
+
+        
+            <input id="MtpsDevice" type="hidden" value="Default" />
+
+
+<![CDATA[ Third party scripts and code linked to or referenced from this website are licensed to you by the parties that own such code, not by Microsoft.  See ASP.NET Ajax CDN Terms of Use – http://www.asp.net/ajaxlibrary/CDN.ashx. ]]>
+        
+            
+            
+            
+            
+            
+        
+
+
+
+
+
+<noscript><div><img alt="DCSIMG" id="Img1" width="1" height="1" src="http://m.webtrends.com/dcsmgru7m99k7mqmgrhudo0k8_8c6m/njs.gif?dcsuri=/nojavascript&amp;WT.js=No" /></div></noscript>
+
+
+
+
+
+
+
+
+
+<noscript>
+  <a href="http://www.omniture.com" title="Web Analytics">
+    <img src="//msstonojsmsdn.112.2o7.net/b/ss/msstonojsmsdn/1/H.20.2--NS/0" height="1" width="1" border="0" alt="" />
+  </a>
+</noscript>
+
+
+
+
+<div id="globalRequestVerification">
+    <input name="__RequestVerificationToken" type="hidden" value="6HrkmwcNur6e2L_ly2ga1AibgzptdxnO2GcHniRBV3leMYsvhRVOgFLL0zkyivHcJ6tJx6v0MNYI8iILyHbqWR0MWyIkTlPvWk9y9F619dF4PqsMGH3AiONla0HUqyxP65hBhA2" />
+</div>
+
+
+        </div>
+    <script type="text/javascript" class="mtps-injected">
+/*<![CDATA[*/
+(function(window,document){"use strict";function preload(scripts){for(var result=[],script,e,i=0;i<scripts.length;i++)script=scripts[i],script.hasOwnProperty("url")&&(e=document.createElement("script"),e.src=script.url,script.throwaway=e),result.push(script);return result}function inject(scripts,index){var script,elem;if(index>=scripts.length){delete mtps.injectScripts;return}script=scripts[index],elem=document.createElement("script"),elem.className="mtps-injected",elem.async=!1;var isLoaded=!1,timeoutId=0,injectNextFnName="",injectNext=elem.onerror=function(){isLoaded||(isLoaded=!0,inject(scripts,index+1),window.clearTimeout(timeoutId),elem.onload=elem.onerror=elem.onreadystatechange=null,injectNextFnName&&delete mtps[injectNextFnName],elem.removeEventListener&&elem.removeEventListener("load",injectNext,!1))};elem.addEventListener?elem.addEventListener("load",injectNext,!1):elem.readyState==="uninitialized"?elem.onreadystatechange=function(){(this.readyState==="loaded"||this.readyState==="complete")&&injectNext()}:elem.onload=injectNext,script.hasOwnProperty("url")?(timeoutId=window.setTimeout(injectNext,12e4),elem.src=script.url):(injectNextFnName="_injectNextScript_"+index,mtps[injectNextFnName]=injectNext,timeoutId=window.setTimeout(injectNext,2e3),elem.text="try {\n"+script.txt+"\n} finally { MTPS."+injectNextFnName+" && MTPS."+injectNextFnName+"(); }"),parent.appendChild(elem)}var mtps=window.MTPS||(window.MTPS={}),parent=document.getElementsByTagName("head")[0];mtps.injectScripts=function(scripts){inject(preload(scripts),0)}})(window,document);
+MTPS.injectScripts([
+	{ txt: "/**/\r\n(window.MTPS || (window.MTPS = {})).cdnDomains || (window.MTPS.cdnDomains = { \r\n\t\"image\": \"http://i.msdn.microsoft.com\", \r\n\t\"js\": \"http://i2.msdn.microsoft.com\", \r\n\t\"css\": \"http://i3.msdn.microsoft.com\"\r\n});\r\n/**/" },
+	{ url: "http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js" },
+	{ txt: "//\n  var literalNormalizedUrl = \u0027/en-us/library/vstudio/bb984658(d=default,l=en-us,v=vs.110).aspx\u0027;\n  var wt_nvr_ru = \u0027WT_NVR_RU\u0027;\n  var wt_fpcdom = \u0027.microsoft.com\u0027;\n  var wt_domlist = \u0027msdn.microsoft.com\u0027;\n  var wt_pathlist = \u0027\u0027;\n  var wt_paramlist = \u0027DCSext.mtps_devcenter\u0027;\n  var wt_siteid = \u0027MSDN\u0027;\n  var gDomain = \u0027m.webtrends.com\u0027;\n  var gDcsId = \u0027dcsmgru7m99k7mqmgrhudo0k8_8c6m\u0027;\n  var gFpc = \u0027WT_FPC\u0027;\n\n\n\n  if (document.cookie.indexOf(gFpc + \"=\") == -1) {\n    var wtidJs = document.createElement(\"script\");\n    wtidJs.src = \"//\" + gDomain + \"/\" + gDcsId + \"/wtid.js\";\n    document.getElementsByTagName(\"head\")[0].appendChild(wtidJs);\n  }\n\n\n\n  var detectedLocale = \u0027en-us\u0027;\n  var wtsp = \u0027_msdn_\u0027;\n  var gTrackEvents = \u00270\u0027;\n/**/" },
+	{ txt: "/**/\n  var omni_guid = \"51776ae9-3458-4d52-9b74-edab1d949d8d\";\n/**/" },
+	{ url: "http://i2.msdn.microsoft.com/Combined.js?resources=0:Utilities,0:Topic,1:webtrendsscript,2:omni_rsid_MSDN;/Areas/Epx/Content/Scripts:0,/Areas/Global/Content/Webtrends/resources:1,/Areas/Global/Content/Omniture/resources/MSDN:2\u0026amp;hashKey=35BF4EE0DD7E30901440BE9E9CE63DAC" },
+	{ txt: "//\n    var searchWidgetJsUri = \u0027http://i2.services.social.microsoft.com/search/Widgets/SearchBox.jss?boxid=HeaderSearchTextBox\u0026btnid=HeaderSearchButton\u0026brand=MSDN\u0026loc=en-us\u0026Refinement=195\u0026watermark=Visual%20Studio\u0026focusOnInit=false\u0026iroot=vstudio\u0027;\n  //" },
+	{ url: "http://i2.msdn.microsoft.com/Combined.js?resources=0:search.2,1:Toc,1:NavigationResize,2:FeedbackCounter;/Areas/Epx/Themes/VStudio/Content:0,/Areas/Epx/Library/Content:1,/Areas/Epx/Shared/Content:2\u0026amp;hashKey=695FD787F0BB355A0ED02425C7C4E7AF" },
+	{ txt: "MTPS = window.MTPS || {}; MTPS.LocalizedStrings = window.MTPS.LocalizedStrings || {}; MTPS.LocalizedStrings.ExpandButtonTooltip = \u0027Expand\u0027; MTPS.LocalizedStrings.CollapseButtonTooltip = \u0027Collapse\u0027;" },
+	{ url: "http://i2.msdn.microsoft.com/Combined.js?resources=0:Feedback,1:CodeSnippet,1:TopicNotInScope,1:CollapsibleArea,1:VersionSelector,1:SurveyBroker;/Areas/Epx/Shared/Content:0,/Areas/Epx/Content/Scripts:1\u0026amp;hashKey=0052A15789DA7FCF41C88BD92CBC3B77" },
+	{ txt: "$(document).ready(function() {\n        try {\n            var token = $(\"#globalRequestVerification input[name=\u0027__RequestVerificationToken\u0027]\").clone();\n            $(\"#siteFeedbackForm\").append(token);\n        } catch(err) {\n            \n        }\n    });" }
+]);
+
+/*]]>*/
+</script></body>
+</html>
